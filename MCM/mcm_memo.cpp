@@ -17,8 +17,8 @@ int solve(vector<int> &v,int i,int j){
         int c3=v[i-1]*v[k]*v[j];
         ans=min(ans,c1+c2+c3);
     }
-     dp[i][j]=ans;
-     return dp[i][j];
+     
+     return dp[i][j]=ans;
 }
 int main(){
     vector<int> v={40,20,30,10,30};
